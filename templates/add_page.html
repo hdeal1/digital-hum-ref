@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+	<html lang="en">
+<head>
+	<title>Digiminer</title>
+	<script type="text/javascript" src="/dh.js"></script>
+	<link rel="stylesheet" href="../public/dh.css" type="text/css"/>
+</head>
+<header>
+	<h1><strong>Digiminer</strong></h1>
+</header>
+<body>
+	<div id="dataset_inputs">
+		<label>Choose data type: 
+		<select name="data_set_dropdown">
+		<option value="letter">Letter</option>
+		<option value="ship_manifest">Ship Manifest</option>
+		<option value="book">Book</option>
+		</select>
+		</label><br><br>
+
+		<form action="#">
+			<label>Sender: <input type="text" name="sender"></label><br><br>
+			<label>Sender Location: <input type="text" name="sender_loc"></label><br><br>
+			<label>Recipient: <input type="text" name="recipient"></label><br><br>
+			<label>Recipient Location: <input type="text" name="recipient_loc"></label><br><br>
+			<label>Quantity: <input type="text" name="quantity"></label>
+			<select name="units">
+			<option value="kg">kg.</option>
+			<option value="lbs">lbs.</option>
+			<option value="gm">gm.</option>
+			<option value="lit">lit.</option>
+			</select>
+			<br><br>
+			<input type="submit" name="submit_button">
+		</form>
+	</div>
+</body>
+</html>
+
+
+
+
