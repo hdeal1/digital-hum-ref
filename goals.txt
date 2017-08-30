@@ -1,0 +1,60 @@
+The master, "what the fuck are we doing", sheet.
+-------------------------------------------
+
+Job Delineation:
+
+	-> Andy
+
+	-> Henry
+
+	-> Johnny 
+
+Req List: 
+* = core features
+^ = addtional features
++ = defining features
+
+=DATAMINING PROTOTYPE=
+* Datasets: letters, books, ship manifests. (won't really matter because datasets use the same parameters)
+	+ Drop down menu of datatypes. JS Script to change forms depending on dataset. 
+* Datasets take in name of sender, name of receiver, location of sender
+[GPS Coords?], location of destination [GPS Coords?], amount sent 
+(depending on datatype), date sent and any additional information.  
+	+ All of the listed features are forms. Each form corresponds to an SQL statement to either an excel spreadsheet or mysql database or both.
+	+ After user submits, the entry is shown again for verification.
+	+ If user inserts a city like London, should the program translate it into GPS coordinates for accuracy?
+^ Google OAuth using middleware "passport" to give administrator access to DGS. Allowed deletion of datasets, specific data entries, addition of data types, see who made what addition (how many, what time). 
+^ Students login using stab email. Prevents other users from making additions. 
+* Has to be scaleable. With continous use the dataset will become huge.  
+
+=FULLY DEVELOPED PRODUCT=
+*! Important note: depending on what datasets DGS chooses to visualize, run time, frame drops and hitting our memory limit is of huuuuugggeeee concern. We need to guarentee that as the datasets grow, the program will run. We must find a way to store and access the data dynamically and allocate our memory wisely; considering our current memory limit is ~500mb. 
+
+* Landing Page:
+	+ [Students] Nav bar at the top with options: Map, Add, Support (anything else?) and login button. 
+	+ [Smith] Everything the same except on each page, he has options to delete and things like that. 
+	+ Landing page is similar to an about page. 
+
+* Map (features):
+	+ Half screen map visualization. Lines are drawn from sender to destination as given by the database.  
+	+ Information about the data on hover over line.
+	+ Timeline scroll bar. 
+* Map (style):
+
+* Add (features):
+	+ Identical to "DATA MINING PROTOTYPE"s description of datasets and information on adding new items. 
+* Add (style):
+
+* Support (features):
+	+ Our emails for bug reporting.
+	+ Feature suggestion and run time issues.
+	+ Standard stuff like that.
+* Support (style):
+
+^ Login (features):
+	+ Two forms for email and password.
+	+ Uses OAuth. 
+^ Login (style):
+
+
+
