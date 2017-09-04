@@ -4,6 +4,8 @@ The master, "what the fuck are we doing", sheet.
 Job Delineation:
 
 	-> Andy
+		- UI/UX Designer and Front End Developer.
+		- Main contact with DGS and Euro Students.
 
 	-> Henry
 
@@ -33,28 +35,36 @@ Req List:
 * Landing Page:
 	+ [Students] Nav bar at the top with options: Map, Add, Support (anything else?) and login button. 
 	+ [Smith] Everything the same except on each page, he has options to delete and things like that. 
-	+ Landing page is similar to an about page. 
+	+ Landing page should default to map page for quick student access/use. 
 
 * Map (features):
 	+ Half screen map visualization. Lines are drawn from sender to destination as given by the database.  
 	+ Information about the data on hover over line.
-	+ Timeline scroll bar. 
+	+ Timeline scroll bar.
+	^ Lines are drawn based on real time. eg. travel by ship is faster than travel by foot.
+	^ Play Time Option. Click play and watch time pass a various rates.
 * Map (style):
+	+ Alter Map Type (Geographical/Satalite, just roads, Topographical?).
+	+ Zoomable
 
 * Add (features):
 	+ Identical to "DATA MINING PROTOTYPE"s description of datasets and information on adding new items. 
 * Add (style):
+	+ Clean and CRISP.
 
 * Support (features):
 	+ Our emails for bug reporting.
 	+ Feature suggestion and run time issues.
 	+ Standard stuff like that.
+
 * Support (style):
+	+ Clean and CRISP.
 
 ^ Login (features):
 	+ Two forms for email and password.
 	+ Uses OAuth. 
-^ Login (style):
 
+^ Login (style):
+	+ Clean and CRISP.
 
 
