@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+	<html lang="en">
+<head>
+	<title>Digiminer</title>
+	<!-- <script type="text/javascript" src="../form_action.js"></script> -->
+	<link rel="stylesheet" href="../public/dh.css" type="text/css"/>
+</head>
+<header>
+	<h1><strong>Digiminer</strong></h1>
+</header>
+<body>
+	<div id="dataset_inputs">
+		<form action="/insert_data" method="POST">
+			<table id="tableData">
+				<thead>
+					<th>Type of Data</th>
+					<th>Sender</th>
+					<th>Sender Location</th>
+					<th>Recipient</th>
+					<th>Recipient Location</th>
+					<th>Quantity</th>
+					<th>Units</th>
+				</thead>
+				<tbody id="input"></tbody>
+				<tbody id="data_template">
+					<tr>
+						<td><input id="datatype" name="datatype" type="text"/></td>
+						<td><input id="sender" name="sender" type="text"/></td>
+						<td><input id="sender_loc" name="sender_loc" type="text"/></td>
+						<td><input id="recipient" name="recipient" type="text"/></td>
+						<td><input id="recipient_loc" name="recipient_loc" type="text"/></td>
+						<td><input id="quantity" name="quantity" type="INT"/></td>
+						<td><input id="units" name="units" type="text"/></td>
+						<!-- <td><input id="additional" name="additional" type="text"/></td> -->
+					</tr>
+				</tbody>
+			</table>
+			<button id="ActionAddRow">Add Row</button>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
+
+
+
+
