@@ -10,7 +10,9 @@ var conn = mysql.createConnection({
 module.exports = function(app){
 	
 	app.get('/', function(req,res){
-	res.render('index.html');
+		conn.query("SELECT datatype FROM dataset", function(err, dataset){
+			res.render('index.html', {datatype: dataset[1].datatype});
+		});
 	});
 
 	app.get('/add_data', function(req,res){
@@ -18,13 +20,13 @@ module.exports = function(app){
 	});
 
 	app.post('/insert_data', function(req,res){
-		conn.connect(function(err){
-			if (err) throw err;
-			console.log("Connection made.");
-			console.log(req.body.datatype);
-			conn.query("INSERT INTO dataset (datatype, sender, sender_loc, recipient, recipient_loc, quantity, units) VALUES (?,?,?,?,?,?,?);", [req.body.datatype, req.body.sender, req.body.sender_loc, req.body.recipient, req.body.recipient_loc, req.body.quantity, req.body.units]);
+		console.log("Connection made.");
+		conn.query("INSERT INTO dataset (datatype, sender, sender_loc, recipient, recipient_loc, quantity, units) VALUES (?,?,?,?,?,?,?);", [req.body.datatype, req.body.sender, req.body.sender_loc, req.body.recipient, req.body.recipient_loc, req.body.quantity, req.body.units]);
 		});
 		
+
+	app.get('/map_vis', function(req,res){
+		res.render('map_vis.html');
 	});
 
 
